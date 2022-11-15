@@ -19,57 +19,21 @@ module.exports = {
     },
   },
   module: {
-    rules: [{
+    rules: [
+      {
+        test: /\.svg$/,
+        use: 'file-loader',
+      },
+      {
         test: /\.css$/,
-        use: [{
+        use: [
+          {
             loader: 'style-loader',
           },
           {
             loader: 'css-loader',
           },
         ],
-      },
-      {
-        mimetype: 'image/svg+xml',
-        scheme: 'data',
-        type: 'asset/resource',
-        generator: {
-          filename: 'icons/[hash].svg',
-        },
-      },
-      {
-        test: /\.(scss)$/,
-        use: [{
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: () => [
-                  require('autoprefixer'),
-                ],
-              },
-            },
-          },
-          {
-            loader: 'sass-loader',
-          },
-        ],
-      },
-      /* babel loader */
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [{
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        }],
       },
     ],
   },
