@@ -198,6 +198,12 @@ section.information .info-1 {
     padding: 183px 0;
 }
 
+/* berita */
+.card-title{
+    text-decoration: none;
+    color: var(--gray-1);
+    font-weight: bold;
+}
 /* ------------------------------------------------------------ 
 Footer setion
 ---------------------------------------------------------------*/
