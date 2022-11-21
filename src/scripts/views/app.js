@@ -2,6 +2,7 @@ import '../component/navbar';
 import '../component/hero';
 import '../component/news-list';
 import '../component/news-item';
+import '../component/f-about';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
