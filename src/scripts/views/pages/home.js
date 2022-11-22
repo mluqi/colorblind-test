@@ -12,6 +12,8 @@ const Home = {
         
         <!--Berita-->
         <news-list></news-list>
+
+       
     `;
     },
 
