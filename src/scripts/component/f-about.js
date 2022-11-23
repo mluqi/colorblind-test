@@ -7,23 +7,52 @@ class FooterSection extends HTMLElement{
 
     render() {
         this.innerHTML = `
-        <section class="footer" id="about">
-            <div class="container">
-            <div class="left-footer text-left">
-                <p>Color Blind Test<span style="font-size: 12px; vertical-align: top;">&reg;</span></p>
-            </div>
-           
-            <div class="right-footer">
-                <p>About Us</p>
-                <ul>
-                <li><a class="img-svg" href="https://github.com/mluqi"><img src="${ghLogo}"></a>F225X0440 - Mohammad Luqi Wiharto</li>
-                <li><a class="img-svg" href="https://github.com/Ardywsptr"><img src="${ghLogo}"></a>F288X0693 - Ardy Wirasaputra</li>
-                <li><a class="img-svg" href="https://github.com/wiraaji"><img src="${ghLogo}"></a>F225X0446 - Wira Aji Nugraha</li>
-                <li><a class="img-svg" href="https://github.com/isamsd26"><img src="${ghLogo}"></a>F007X0030 - Isa Mas'ud</li>
-                </ul>
-            </div>
-           
-            </div>
+        <section class="">
+            <!-- Footer -->
+            <footer class=" text-white" style="background-color: #303841;">
+                <!-- Grid container -->
+                <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-3">Footer Content</h5>
+                        <p>
+                            Dalam bidang kesehatan mata teknologi berkembang sangat pesat, tetapi masih banyak orang  datang langsung ke dokter mata untuk cek kesehatan mata mereka terutama tes Buta Warna.  
+                        </p>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-3">About Us</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                            <p><a class="img-svg" href="https://github.com/mluqi" class="text-white"><img src="${ghLogo}"></a>F225X0440 - Mohammad Luqi Wiharto</p>
+                            
+                            </li>
+                            <li>
+                            <p><a class="img-svg" href="https://github.com/Ardywsptr" class="text-white"><img src="${ghLogo}"></a>F288X0693 - Ardy Wirasaputra</p> 
+                            </li>
+                            <li>
+                            <p><a class="img-svg" href="https://github.com/wiraaji" class="text-white"><img src="${ghLogo}"></a>F225X0446 - Wira Aji Nugraha</p> 
+                            </li>
+                            <li>
+                                <p><a class="img-svg"href="https://github.com/isamsd26" class="text-white"><img src="${ghLogo}"></a>F007X0030 - Isa Mas'ud</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.63);">
+                © 2022 Copyright:
+                
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
         </section>
     `;
     }
