@@ -89,3 +89,35 @@ input {
 .scoreArea{
     display: none;
 }
+
+@media screen and (min-width: 400px) {
+    .inner-div{
+        width: auto;
+        background-color: white;
+        padding: 3rem 8rem;
+        border-radius: 1rem;
+        box-shadow: 0 1rem -0.7rem rgba(0, 0, 0, 0.4);
+    }
+    #submit ,
+    .btn{
+        padding: 10px;
+        outline: none;
+        font-size: 1rem;
+        display: block;
+        margin: 10px;
+        border: none;
+        text-transform: uppercase;
+        color: #fefefe;
+        background-color: #303841;
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .inner-div{
+        width: auto;
+        background-color: white;
+        padding: 3rem 8rem;
+        border-radius: 1rem;
+        box-shadow: 0 1rem -0.7rem rgba(0, 0, 0, 0.4);
+    }
+}
