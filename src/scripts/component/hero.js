@@ -15,7 +15,7 @@ class HeroSection extends HTMLElement {
                             Selamat datang, kami menyediakan tes buta warna
                         </div>
                         <div class="buttons">
-                            <a href="#" class="btn btn-primary">Start Test</a>
+                            <a href="#/tes" class="btn btn-primary">Start Test</a>
                         </div>
                     </div>
                     <div class="col-md-6">

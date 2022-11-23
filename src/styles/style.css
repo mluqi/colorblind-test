@@ -217,13 +217,15 @@ Footer setion
 }
   
 .img-svg{
-    padding-right: 30px;
+    padding-right: 5px;
 }
 
-#about .container {
+#about  {
     display: flex;
     align-items: center;
 }
+
+
 
 .left-footer {
     flex-basis: 40%;
@@ -293,8 +295,15 @@ Responsive section
     /* ------------------------------------------------------------ 
     Footer setion
     ---------------------------------------------------------------*/
-    section.footer {
+    section footer {
         padding-top: 50px;
         margin-bottom: 44px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    section footer {
+        font-size: 14px;
     }
 }
