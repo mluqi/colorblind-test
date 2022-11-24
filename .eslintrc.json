@@ -17,6 +17,7 @@
         "indent": 0,
         "no-console": 0,
         "no-underscore-dangle": 0,
-        "operator-linebreak": 0
+        "operator-linebreak": 0,
+        "space-before-blocks": 0
     }
 }

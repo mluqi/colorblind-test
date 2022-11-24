@@ -1,6 +1,6 @@
 import ghLogo from '../../public/icons/github.svg';
 
-class FooterSection extends HTMLElement{
+class FooterSection extends HTMLElement {
     connectedCallback() {
         this.render();
     }
@@ -11,7 +11,7 @@ class FooterSection extends HTMLElement{
             <!-- Footer -->
             <footer class=" text-white" style="background-color: #303841;">
                 <!-- Grid container -->
-                <div class="container p-4">
+                <div id="about" class="container p-4">
                 <!--Grid row-->
                 <div class="row">
                     <!--Grid column-->
@@ -56,6 +56,5 @@ class FooterSection extends HTMLElement{
         </section>
     `;
     }
-
 }
 customElements.define('f-about', FooterSection);
