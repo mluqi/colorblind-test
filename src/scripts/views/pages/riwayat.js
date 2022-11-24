@@ -28,6 +28,12 @@ const Riwayat = {
                         <td>100</td>
                         <td><button type="button" class="btn btn-danger" id="btn-delete" value=""><i class="bi bi-trash3"></i></button></td>
                     </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>24 November 2022</td>
+                        <td>100</td>
+                        <td><button type="button" class="btn btn-danger" id="btn-delete" value=""><i class="bi bi-trash3"></i></button></td>
+                    </tr>
                 <!-- end output data tes disini-->
 
                 </tbody>
