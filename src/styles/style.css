@@ -102,6 +102,10 @@ section.hero .text {
     color: var(--gray-1);
 }
 
+.heroImg{
+    width: 100%;
+}
+
 .buttons {
     padding-top: 69px;
 }

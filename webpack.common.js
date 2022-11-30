@@ -21,7 +21,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.svg$/,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         use: 'file-loader',
       },
       {
@@ -53,6 +53,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/templates/index.html',
+      favicon: './src/public/favicon.svg',
       filename: 'index.html',
     }),
   ],
