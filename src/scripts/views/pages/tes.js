@@ -7,8 +7,8 @@ const Tes = {
         return `
 
     <style>
-    .questionImg{
-        width:100px;
+    .question{
+        color:#303841;
     }
     .qs-all{
         display: flex;
@@ -23,12 +23,12 @@ const Tes = {
         background-color: #3A4750;
         color: #ddd;
         border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
         width: 700px;
     }
     .inner-div{
         background-color: #3A4750;
         border-radius: 1rem;
-        box-shadow: 0 1rem -0.7rem rgba(0, 0, 0, 0.4);
     }
     .inner-div h2{
         text-align:center;
@@ -99,6 +99,10 @@ const Tes = {
 
 
     @media screen and (min-width: 300px) {
+        .srcImg{
+            width: 350px;
+            margin-left: 10px;
+        }
         .inner-div{
             width: auto;
             border-radius: 1rem;
@@ -173,7 +177,7 @@ const Tes = {
     async afterRender() {
         // Fungsi ini akan dipanggil setelah render()
         const quizDB = [{
-                question: '<img src="https://i.ibb.co/MV2bTzr/2.png" alt="Ishihara-01" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/MV2bTzr/2.png" alt="Ishihara-01" border="0">',
                 a: '25',
                 b: '12',
                 c: '4',
@@ -182,7 +186,7 @@ const Tes = {
             },
 
             {
-                question: '<img src="https://i.ibb.co/L928WxJ/3.png" alt="Ishihara-02" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/L928WxJ/3.png" alt="Ishihara-02" border="0">',
                 a: '13',
                 b: '3',
                 c: '8',
@@ -191,7 +195,7 @@ const Tes = {
             },
 
             {
-                question: '<img src="https://i.ibb.co/mbvQyQt/5.png" alt="Ishihara-03" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/mbvQyQt/5.png" alt="Ishihara-03" border="0">',
                 a: '7',
                 b: '3',
                 c: '9',
@@ -200,7 +204,7 @@ const Tes = {
             },
 
             {
-                question: '<img src="https://i.ibb.co/j47Jx8s/6.png" alt="Ishihara-04" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/j47Jx8s/6.png" alt="Ishihara-04" border="0">',
                 a: '6',
                 b: '7',
                 c: '3',
@@ -208,7 +212,7 @@ const Tes = {
                 ans: 'ans1',
             },
             {
-                question: '<img src="https://i.ibb.co/16Ngt2v/7.png" alt="Ishihara-05" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/16Ngt2v/7.png" alt="Ishihara-05" border="0">',
                 a: '8',
                 b: '4',
                 c: '7',
@@ -216,7 +220,7 @@ const Tes = {
                 ans: 'ans3',
             },
             {
-                question: '<img src="https://i.ibb.co/qDqb6WT/8.png" alt="Ishihara-06" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/qDqb6WT/8.png" alt="Ishihara-06" border="0">',
                 a: '4',
                 b: '9',
                 c: '6',
@@ -224,7 +228,7 @@ const Tes = {
                 ans: 'ans4',
             },
             {
-                question: '<img src="https://i.ibb.co/RpPbDPT/16.png" alt="Ishihara-07" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/RpPbDPT/16.png" alt="Ishihara-07" border="0">',
                 a: '16',
                 b: '61',
                 c: '25',
@@ -232,7 +236,7 @@ const Tes = {
                 ans: 'ans1',
             },
             {
-                question: '<img src="https://i.ibb.co/2Pwyzr6/29.png" alt="Ishihara-08" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/2Pwyzr6/29.png" alt="Ishihara-08" border="0">',
                 a: '29',
                 b: '35',
                 c: '19',
@@ -240,7 +244,7 @@ const Tes = {
                 ans: 'ans1',
             },
             {
-                question: '<img src="https://i.ibb.co/TWvyLkV/42.png" alt="Ishihara-09" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/TWvyLkV/42.png" alt="Ishihara-09" border="0">',
                 a: '76',
                 b: '42',
                 c: '49',
@@ -248,7 +252,7 @@ const Tes = {
                 ans: 'ans2',
             },
             {
-                question: '<img src="https://i.ibb.co/6Fwh8QT/45.png" alt="Ishihara-10" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/6Fwh8QT/45.png" alt="Ishihara-10" border="0">',
                 a: '40',
                 b: '68',
                 c: '45',
@@ -256,7 +260,7 @@ const Tes = {
                 ans: 'ans3',
             },
             {
-                question: '<img src="https://i.ibb.co/6vgk26F/74.png" alt="Ishihara-11" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/6vgk26F/74.png" alt="Ishihara-11" border="0">',
                 a: '57',
                 b: '78',
                 c: '69',
@@ -264,7 +268,7 @@ const Tes = {
                 ans: 'ans4',
             },
             {
-                question: '<img src="https://i.ibb.co/BfGW4f6/97.png" alt="Ishihara-12" border="0">',
+                question: '<img class="srcImg" src="https://i.ibb.co/BfGW4f6/97.png" alt="Ishihara-12" border="0">',
                 a: '97',
                 b: '96',
                 c: '88',
