@@ -1,6 +1,6 @@
 import ghLogo from '../../public/icons/github.svg';
 
-class FooterSection extends HTMLElement{
+class FooterSection extends HTMLElement {
     connectedCallback() {
         this.render();
     }
@@ -9,14 +9,14 @@ class FooterSection extends HTMLElement{
         this.innerHTML = `
         <section class="">
             <!-- Footer -->
-            <footer class=" text-white" style="background-color: #303841;">
+            <footer class="text-white mb-0" style="background-color: #303841;">
                 <!-- Grid container -->
-                <div class="container p-4">
+                <div id="about" class="container p-4">
                 <!--Grid row-->
                 <div class="row">
                     <!--Grid column-->
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase mb-3">Footer Content</h5>
+                        <h5 class="text-uppercase mb-3">Color Blind Test</h5>
                         <p>
                             Dalam bidang kesehatan mata teknologi berkembang sangat pesat, tetapi masih banyak orang  datang langsung ke dokter mata untuk cek kesehatan mata mereka terutama tes Buta Warna.  
                         </p>
@@ -44,10 +44,9 @@ class FooterSection extends HTMLElement{
                 <!--Grid row-->
                 </div>
                 <!-- Grid container -->
-
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.63);">
-                © 2022 Copyright:
+                © 2022 Copyright
                 
                 </div>
                 <!-- Copyright -->
@@ -56,6 +55,5 @@ class FooterSection extends HTMLElement{
         </section>
     `;
     }
-
 }
 customElements.define('f-about', FooterSection);
