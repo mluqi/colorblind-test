@@ -18,7 +18,7 @@ const Home = {
     },
 
     async afterRender() {
-        // Fungsi ini akan dipanggil setelah render()
+    // Fungsi ini akan dipanggil setelah render()
     const tipsListElement = document.querySelector('tips-list');
     tipsListElement.datas = datas;
     },

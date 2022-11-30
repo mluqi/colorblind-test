@@ -8,7 +8,7 @@ class newsList extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <section class="setup">
+        <section class ="setup">
             <div class="container">
                 <div id="news" class="text-header text-center">
                     <h3>Berita</h3>

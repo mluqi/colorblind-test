@@ -46,8 +46,7 @@ class FooterSection extends HTMLElement {
                 <!-- Grid container -->
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.63);">
-                © 2022 Copyright
-                
+                Copyright © 2022 Color Blind Test
                 </div>
                 <!-- Copyright -->
             </footer>

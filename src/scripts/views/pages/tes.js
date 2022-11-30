@@ -5,6 +5,7 @@
 const Tes = {
     async render() {
         return `
+
     <style>
     .questionImg{
         width:100px;
@@ -166,6 +167,7 @@ const Tes = {
         </div> 
     </div>
     </div>
+
     `;
     },
 
