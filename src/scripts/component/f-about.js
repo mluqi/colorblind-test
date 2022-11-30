@@ -9,7 +9,7 @@ class FooterSection extends HTMLElement {
         this.innerHTML = `
         <section class="">
             <!-- Footer -->
-            <footer class=" text-white" style="background-color: #303841;">
+            <footer class="text-white mb-0" style="background-color: #303841;">
                 <!-- Grid container -->
                 <div id="about" class="container p-4">
                 <!--Grid row-->
@@ -47,7 +47,7 @@ class FooterSection extends HTMLElement {
 
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.63);">
-                © 2022 Copyright:
+                Copyright © 2022 Color Blind Test
                 
                 </div>
                 <!-- Copyright -->
