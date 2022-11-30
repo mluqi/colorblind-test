@@ -16,7 +16,7 @@ class FooterSection extends HTMLElement {
                 <div class="row">
                     <!--Grid column-->
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase mb-3">Footer Content</h5>
+                        <h5 class="text-uppercase mb-3">Color Blind Test</h5>
                         <p>
                             Dalam bidang kesehatan mata teknologi berkembang sangat pesat, tetapi masih banyak orang  datang langsung ke dokter mata untuk cek kesehatan mata mereka terutama tes Buta Warna.  
                         </p>
@@ -44,11 +44,9 @@ class FooterSection extends HTMLElement {
                 <!--Grid row-->
                 </div>
                 <!-- Grid container -->
-
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.63);">
                 Copyright © 2022 Color Blind Test
-                
                 </div>
                 <!-- Copyright -->
             </footer>
