@@ -1,3 +1,8 @@
+/* eslint-disable no-plusplus */
+import {
+    arrayTest,
+} from './tes';
+
 const Riwayat = {
     async render() {
         return `
@@ -16,24 +21,21 @@ const Riwayat = {
                 <tbody class="align-middle text-center">
 
                 <!--output data tes disini-->
-                    <tr>
+                    <!--<tr>
                         <th scope="row">1</th>
                         <td>22 November 2022</td>
                         <td>100</td>
                         <td><button type="button" class="btn btn-danger" id="btn-delete" value=""><i class="bi bi-trash3"></i></button></td>
-                    </tr>
+                    </tr>-->
+
+                    ${arrayTest.map((test, index) => `
                     <tr>
-                        <th scope="row">2</th>
-                        <td>23 November 2022</td>
-                        <td>100</td>
-                        <td><button type="button" class="btn btn-danger" id="btn-delete" value=""><i class="bi bi-trash3"></i></button></td>
+                        <th scope="row">${index + 1}</th>
+                        <td>${test.id}</td>
+                        <td>${test.result}</td>
+                        <td><button type="button" class="btn btn-danger" id="btn-delete" value="${index}"><i class="bi bi-trash3"></i></button></td>
                     </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>24 November 2022</td>
-                        <td>100</td>
-                        <td><button type="button" class="btn btn-danger" id="btn-delete" value=""><i class="bi bi-trash3"></i></button></td>
-                    </tr>
+                    `).join('')}
                 <!-- end output data tes disini-->
 
                 </tbody>
@@ -44,6 +46,33 @@ const Riwayat = {
 
     async afterRender() {
         // Fungsi ini akan dipanggil setelah render()
+        const btnDelete = document.getElementsByClassName('btn-danger');
+        for (let i = 0; i < btnDelete.length; i++) {
+            btnDelete[i].addEventListener('click', () => {
+                // eslint-disable-next-line no-undef
+                swal({
+                        title: 'Hapus item ini?',
+                        icon: 'warning',
+                        buttons: ['Batal', true],
+                        dangerMode: true,
+                    })
+                    .then((willDelete) => {
+                        if (willDelete) {
+                            arrayTest.splice(btnDelete[i].value, 1);
+                            localStorage.setItem('COLOR-BLIND-TEST', JSON.stringify(arrayTest));
+                            // eslint-disable-next-line no-undef
+                            swal({
+                                title: 'Sukses!',
+                                text: 'Riwayat berhasil dihapus',
+                                icon: 'success',
+                                button: true,
+                            }).then(() => {
+                                document.location.reload();
+                            });
+                        }
+                    });
+            });
+        }
     },
 };
 
