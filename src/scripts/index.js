@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import * as bootstrap from 'bootstrap';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 import App from './views/app';
 
 const home = new App({

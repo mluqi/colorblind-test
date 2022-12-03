@@ -21,13 +21,6 @@ const Riwayat = {
                 <tbody class="align-middle text-center">
 
                 <!--output data tes disini-->
-                    <!--<tr>
-                        <th scope="row">1</th>
-                        <td>22 November 2022</td>
-                        <td>100</td>
-                        <td><button type="button" class="btn btn-danger" id="btn-delete" value=""><i class="bi bi-trash3"></i></button></td>
-                    </tr>-->
-
                     ${arrayTest.map((test, index) => `
                     <tr>
                         <th scope="row">${index + 1}</th>
