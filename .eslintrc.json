@@ -18,6 +18,7 @@
         "no-console": 0,
         "no-underscore-dangle": 0,
         "operator-linebreak": 0,
-        "space-before-blocks": 0
+        "space-before-blocks": 0,
+        "no-loop-func": 0
     }
 }
