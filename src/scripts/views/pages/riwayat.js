@@ -25,7 +25,7 @@ const Riwayat = {
                     <tr>
                         <th scope="row">${index + 1}</th>
                         <td>${test.id}</td>
-                        <td>${test.result}</td>
+                        <td>${test.result}/12</td>
                         <td><button type="button" class="btn btn-danger" id="btn-delete" value="${index}"><i class="bi bi-trash3"></i></button></td>
                     </tr>
                     `).join('')}

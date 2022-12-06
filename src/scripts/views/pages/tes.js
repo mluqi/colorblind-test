@@ -210,25 +210,27 @@ const Tes = {
             questionCount++;
             deselectAll();
 
-            const id = new Date();
-            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-            const datetime = `${days[id.getDay()]},${id.getDate()}-${id.getMonth() + 1}-${id.getFullYear()}`;
-            // const valueInput = button.dataset.test;
-            const testObject = setTestObject(datetime, score);
-            arrayTest.push(testObject);
-
-            localStorage.setItem('COLOR-BLIND-TEST', JSON.stringify(arrayTest));
-
             if (questionCount < quizDB.length) {
                 loadQuestion();
             } else {
                 showScore.innerHTML = `
                 <h3>Nilai Mu : ${score}/${quizDB.length}</h3>
                 <div class="button text-center">
-                    <button class"btn" onclick="location.reload()">Tes Lagi</button>
+                    <button class="btn" onclick="location.reload()">Tes Lagi</button>
                     <a href="#/riwayat" class="btn btn-primary">Riwayat</a>
                 </div>
                 `;
+
+                // menyimpan data hasil test ke local storage
+                const id = new Date();
+                const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+                const datetime = `${days[id.getDay()]},${id.getDate()}-${id.getMonth() + 1}-${id.getFullYear()}`;
+                const testObject = setTestObject(datetime, score);
+                arrayTest.push(testObject);
+
+                localStorage.setItem('COLOR-BLIND-TEST', JSON.stringify(arrayTest));
+                // end
+
                 showScore.classList.remove('scoreArea');
             }
         });
