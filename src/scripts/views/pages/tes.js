@@ -2,6 +2,21 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-return-assign */
 /* eslint-disable no-plusplus */
+
+export const arrayTest = [];
+const setTestObject = (id, result) => ({
+    id,
+    result,
+});
+
+if (localStorage.getItem('COLOR-BLIND-TEST') !== null) {
+    const storage = localStorage.getItem('COLOR-BLIND-TEST');
+    const parsed = JSON.parse(storage);
+    parsed.forEach((element) => {
+        arrayTest.push(element);
+    });
+}
+
 const Tes = {
     async render() {
         return `
@@ -85,15 +100,15 @@ const Tes = {
 
 
     #showScore .btn{
-        align-items: center;
         margin-top: 2rem;
         background-color: #303841;
-        color: #fefefe;
+        color: black;
     }
 
     #showScore .btn:hover{
-        background-color: #EA9215;
-        transition: 300ms ease-in-out 0s;
+    
+        background-color: #3A4750;
+        color: white;
     }
 
     .scoreArea{
@@ -165,7 +180,7 @@ const Tes = {
                         <label for="ans4" id="option4" class="options">answer</label>
                     </li>
                 </ul>
-                <button id="submit" class="submitArea">Submit</button>
+                <button id="submit" class="text-center submitArea">Submit</button>
                 <div id="showScore" class="scoreArea"></div>
             </div class="inner-div">
         </div> 
@@ -177,9 +192,8 @@ const Tes = {
 
     async afterRender() {
         // Fungsi ini akan dipanggil setelah render()
-        const quizDB = [
-            {
-               question: '<img class="srcImg" src="https://i.ibb.co/MV2bTzr/2.png" alt="Ishihara-01" border="0">',
+        const quizDB = [{
+                question: '<img class="srcImg" src="https://i.ibb.co/MV2bTzr/2.png" alt="Ishihara-01" border="0">',
                 a: '25',
                 b: '12',
                 c: '4',
@@ -328,6 +342,15 @@ const Tes = {
             }
             questionCount++;
             deselectAll();
+
+            const id = new Date();
+            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+            const datetime = `${days[id.getDay()]},${id.getDate()}-${id.getMonth() + 1}-${id.getFullYear()}`;
+            // const valueInput = button.dataset.test;
+            const testObject = setTestObject(datetime, score);
+            arrayTest.push(testObject);
+
+            localStorage.setItem('COLOR-BLIND-TEST', JSON.stringify(arrayTest));
 
             if (questionCount < quizDB.length) {
                 loadQuestion();
