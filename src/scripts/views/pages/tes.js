@@ -102,13 +102,12 @@ const Tes = {
     #showScore .btn{
         margin-top: 2rem;
         background-color: #303841;
-        color: black;
+        color: #fefefe;
     }
 
     #showScore .btn:hover{
-    
-        background-color: #3A4750;
-        color: white;
+        background-color: #EA9215;
+        transition: 300ms ease-in-out 0s;
     }
 
     .scoreArea{
