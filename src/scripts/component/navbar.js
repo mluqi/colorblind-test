@@ -12,17 +12,27 @@ class NavBar extends HTMLElement {
         <a class="navbar-brand" href="#">
             <img src="${logo}" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent, #navbarNavDarkDropdown" aria-controls="navbarSupportedContent navbarNavDarkDropdow" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#tips">Tips & Trik</a>
-            <a class="nav-link" href="#news">Berita</a>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="#tips">Tips & Trik</a></li>
+                  <li><a class="nav-link" href="#news">Berita</a></li>
+                  <li><a class="nav-link" href="#about">About</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
             <a class="nav-link" href="#/tes">Tes</a>
             <a class="nav-link" href="#/riwayat">Riwayat</a>
-            <a class="nav-link" href="#about">About</a>
           </div>
         </div>
       </div>
