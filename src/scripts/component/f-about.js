@@ -102,7 +102,7 @@ class FooterSection extends HTMLElement {
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: #303841;">
                 © 2022 Copyright : C22-138
-                <a class="text-reset fw-bold" href="https://colorbtest.netlify.app/.com">www.colorbtest.netlify.app.com</a>
+                <a class="text-reset fw-bold" href="https://colorbtest.netlify.app">www.colorbtest.netlify.app</a>
             </div>
             <!-- Copyright -->
 
