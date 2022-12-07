@@ -20,137 +20,6 @@ if (localStorage.getItem('COLOR-BLIND-TEST') !== null) {
 const Tes = {
     async render() {
         return `
-
-    <style>
-    .question{
-        color:#303841;
-    }
-    .qs-all{
-        display: flex;
-        color: #303841;
-        justify-content: center;
-        margin-bottom: 200px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    .title-tes{
-        text-align: center;
-        margin: 50px;
-    }
-    .main-div{
-        background-color: #3A4750;
-        color: #ddd;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-        width: 700px;
-    }
-    .inner-div{
-        background-color: #3A4750;
-        border-radius: 1rem;
-    }
-    .inner-div h2{
-        text-align:center;
-        font-size: 3.5rem;
-        font-weight: 400;
-    }
-
-    .inner-div li{
-        font-size: 20px;
-        margin-top: 1.5rem;
-        list-style: none;
-    }
-    .inner-div ul{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    input {
-        cursor: pointer;
-    }
-
-    #submit , .btn{
-        outline: none;
-        font-size: 2rem;
-        display: block;
-        margin: auto;
-        border: none;
-        border-radius: 10px;
-        text-transform: uppercase;
-        color: #fefefe;
-        background-color: #303841;
-        margin-top: 4rem;
-    }
-
-    #submit:hover {
-        background-color: #EA9215;
-        transition: 300ms ease-in-out 0s;
-    }
-
-    #showScore{
-        margin-top: 3rem;
-        padding: 3rem 4rem;
-        box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
-    }
-
-    #showScore h3{
-        font-size: 3rem;
-        text-align: center;
-    }
-
-
-    #showScore .btn{
-        margin-top: 2rem;
-        background-color: #303841;
-        color: #fefefe;
-    }
-
-    #showScore .btn:hover{
-        background-color: #EA9215;
-        transition: 300ms ease-in-out 0s;
-    }
-
-    .scoreArea{
-        display: none;
-    }
-
-
-    @media screen and (min-width: 300px) {
-        .srcImg{
-            width: 350px;
-            margin-left: 10px;
-        }
-        .inner-div{
-            width: auto;
-            border-radius: 1rem;
-            box-shadow: 0 1rem -0.7rem rgba(0, 0, 0, 0.4);
-        }
-        #submit , .btn{
-            padding: 10px;
-            outline: none;
-            font-size: 1rem;
-            display: block;
-            margin: 10px;
-            border: none;
-            text-transform: uppercase;
-            color: #fefefe;
-            background-color: #303841;
-        }
-        .qs-all{
-            margin-bottom: 200px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    }
-
-    @media screen and (max-width: 759px) {
-        .inner-div{
-            width: auto;
-            border-radius: 1rem;
-            box-shadow: 0 1rem -0.7rem rgba(0, 0, 0, 0.4);
-        }
-    }
-    </style>
     <div class="containerLoad">
         <div id="loading"></div>
 
@@ -191,7 +60,8 @@ const Tes = {
 
     async afterRender() {
         // Fungsi ini akan dipanggil setelah render()
-        const quizDB = [{
+        const quizDB = [
+            {
                 question: '<img class="srcImg" src="https://i.ibb.co/MV2bTzr/2.png" alt="Ishihara-01" border="0">',
                 a: '25',
                 b: '12',
