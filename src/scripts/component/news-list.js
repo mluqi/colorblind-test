@@ -12,7 +12,7 @@ class newsList extends HTMLElement {
             <div class="container">
                 <div id="news" class="text-header text-center">
                     <h3>Berita</h3>
-                    <p>Berita Kesehatan Indonesia</p>
+                    <p>Berita Kesehatan Internasional</p>
                 </div class="container text-center">
             <div class="container">
                 <div class="row">
