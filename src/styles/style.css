@@ -256,8 +256,9 @@ Test setion
         width: 100%;
     }
     .answer {
-        min-height: 18px;
-        min-width: 18px;
+        min-height: 20px;
+        min-width: 20px;
+        padding: 10px;
     }
 
     input {
