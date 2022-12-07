@@ -216,9 +216,9 @@ const Tes = {
                 loadQuestion();
             } else {
                 showScore.innerHTML = `
-                <h3>Nilai Mu : ${score}/${quizDB.length}</h3>
+                <h4 class="text-center">Anda telah menjawab benar ${score} dari ${quizDB.length} soal</h4>
                 <div class="button text-center">
-                    <button class="btn" onclick="location.reload()">Tes Lagi</button>
+                    <button class="btn text-center" onclick="location.reload()">Tes Lagi</button>
                     <a href="#/riwayat" class="btn btn-primary">Riwayat</a>
                 </div>
                 `;
