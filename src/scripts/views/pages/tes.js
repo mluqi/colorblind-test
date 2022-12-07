@@ -21,12 +21,45 @@ const Tes = {
     async render() {
         return `
 
-    <div class="containerLoad">
-        <div id="loading"></div>
+            <h4 class="text-center mt-5">Halaman Test</h4>
+            <hr class="border border-secondary opacity-90 w-75 mx-auto">
 
-    <div class="title-tes">
-        <h2>Halaman Tes</h2>
+    <!-- instruksi --> 
+    <div class="card text-center w-75 mx-auto mb-5 mt-5">
+        <div class="card-header fw-bold">
+            Warning!
+        </div>
+        <div class="card-body">
+            <p class="card-text">Seperti test buta warna lain nya, tidak disarankan untuk mengikuti test menggunakan kacamata dengan lensa berwarna apapun. Oleh karena itu, pastikan untuk memperhatikan hal berikut sebelum mengikuti tes :</p>
+            <ol class="list-group list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                    <div class="fw-bold">Tidak menggunakan kaca mata dengan lensa berwarna</div>
+                        Tes ini disarankan untuk dilakukan dengan mata telanjang atau apabila menggunakan kacamata maka pakailah kaca mata dengan lensa tanpa warna (bening). Hal tersebut dilakukan dengan tujuan untuk menghasilkan hasil yang lebih akurat dan tidak terjadi kesalah pahaman dalam mengikuti tes.
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                    <div class="fw-bold">Ubah tingkat kecerahan di layar anda menjadi tinggi</div>
+                        Kecerahan pada layar mempengaruhi warna dan kemampuan untuk melihat diferensiasi, sehingga disarankan untuk meningkatkan tingkat kecerahan pada layar monitor atau ponsel anda.
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                    <div class="fw-bold">Jarak pandang layar maksimal 1 meter</div>
+                        Untuk hasil yang akurat posisikan layar dengan mata pada jarak maksimal 1 meter dari tempat duduk dengan layar monitor/ponsel dan kondisikan ruangan dengan cahaya yang cukup.
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div class="card-footer text-muted">
+            Test dibawah ini
+        </div>
     </div>
+    <!--end-->
+
+    <div class="containerLoad">
+    <div id="loading"></div>
     <div class="qs-all">
         <div class="main-div">
             <div class="inner-div">
@@ -49,7 +82,7 @@ const Tes = {
                         <label for="ans4" id="option4" class="options">answer</label>
                     </li>
                 </ul>
-                <button id="submit" class="text-center submitArea">Submit</button>
+                <button id="submit" class="text-center mx-auto submitArea mb-5 mt-5 ps-5 pe-5">Submit</button>
                 <div id="showScore" class="scoreArea"></div>
             </div class="inner-div">
         </div> 
@@ -218,8 +251,8 @@ const Tes = {
                 showScore.innerHTML = `
                 <h4 class="text-center">Anda telah menjawab benar ${score} dari ${quizDB.length} soal</h4>
                 <div class="button text-center">
-                    <button class="btn text-center" onclick="location.reload()">Tes Lagi</button>
-                    <a href="#/riwayat" class="btn btn-primary">Riwayat</a>
+                    <button class="btn text-center ps-5 pe-5" onclick="location.reload()">Tes Lagi</button>
+                    <a href="#/riwayat" class="btn btn-primary ps-5 pe-5">Riwayat</a>
                 </div>
                 `;
 
