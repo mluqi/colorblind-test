@@ -41,3 +41,12 @@ window.onscroll = function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  window.addEventListener('load', () => {
+    const spinner = document.querySelector('.spinner');
+
+    spinner.classList.add('spinner-hidden');
+    spinner.addEventListener('transitionend', () => {
+        document.body.removeChild(document.body.firstChild);
+    });
+  });
