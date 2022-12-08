@@ -102,15 +102,15 @@ section.hero {
     padding: 80px 0;
 }
 
+.heroImg{
+    width: 100%;
+}
+
 section.hero .text {
     font-weight: 800;
     font-size: 48px;
     line-height: 73px;
     color: var(--gray-1);
-}
-
-.heroImg{
-    width: 100%;
 }
 
 .buttons {
@@ -239,7 +239,7 @@ Test setion
         background-color: #3A4750;
         color: #ddd;
         border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        box-shadow: 10px 11px 15px -3px rgba(0,0,0,0.1);
         width: 700px;
     }
     .inner-div{
@@ -293,7 +293,6 @@ Test setion
     #showScore{
         margin-top: 3rem;
         padding: 3rem 4rem;
-        box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
     }
 
     #showScore h3{
@@ -318,6 +317,46 @@ Test setion
         display: none;
     }
 
+    /* Spinner */
+
+.spinner{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 200px;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    transition: opacity 0.90s, visibility 0.90s;
+}
+
+.spinner-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid #dddd;
+    border-top-color:#EA9215;
+    border-radius: 50%;
+    animation: loading 0.90s ease infinite;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
 
 /* --------Responsive section test-------------*/
 @media screen and (min-width: 300px) {
