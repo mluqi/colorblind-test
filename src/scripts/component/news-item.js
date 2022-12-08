@@ -20,7 +20,7 @@ $.ajax({
         let cards = '';
         news.forEach((m) => {
             cards += `
-            <div class="card mb-3 ms-3" style="max-width: 540px;">
+            <div  id="newss" class="card mb-3 ms-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="${m.image}" class="img-fluid rounded-start mt-4" alt="..."width="100%">

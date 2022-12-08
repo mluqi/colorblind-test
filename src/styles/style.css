@@ -210,11 +210,21 @@ section.information .info-1 {
 }
 
 /* berita */
+#newss .card{
+    max-width: 540px;
+}
+
 .card-title{
     text-decoration: none;
     color: var(--gray-1);
     font-weight: bold;
 }
+
+#newss:hover{
+    transform: scale(1.1); 
+    transition: all 0.5s ease;
+}
+
 
 /* ------------------------------------------------------------ 
 Test setion
@@ -347,6 +357,11 @@ Test setion
     border-top-color:#EA9215;
     border-radius: 50%;
     animation: loading 0.90s ease infinite;
+}
+
+.hoverfooter:hover{
+    transition: all 0.5s ease-in-out; 
+    transform: scale(1.1);
 }
 
 @keyframes loading{

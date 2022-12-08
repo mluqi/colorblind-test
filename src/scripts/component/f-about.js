@@ -37,8 +37,8 @@ class FooterSection extends HTMLElement {
                             <h6 class="text-uppercase fw-bold mb-4"><i class="bi bi-eye-fill"></i> About us
                             </h6>
                             <p>
-                                Colod blind test merupakan website untuk menguji kepekaan mata anda terhadap warna dengan menggunakan metode tes berupa ishihara. 
-                                Anda dapat menemukan tes buta warna, hasil, berita, test dan trik untuk menjaga kesehatan mata anda disini.
+                                Color blind tes merupakan website untuk menguji kepekaan mata anda terhadap warna dengan menggunakan metode tes berupa ishihara. 
+                                Anda dapat menemukan tes buta warna, hasil, berita, tips dan trik untuk menjaga kesehatan mata anda disini.
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -47,37 +47,37 @@ class FooterSection extends HTMLElement {
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <h6 class="text-uppercase fw-bold mb-4">Developer</h6>
                             <p>
-                                <a href="https://github.com/mluqi" class="text-reset">Mohammad Luqi Wiharto</a>
+                                <a href="https://github.com/mluqi" class="hoverfooter text-reset">Mohammad Luqi Wiharto</a>
                             </p>
                             <p>
-                                <a href="https://github.com/Ardywsptr" class="text-reset">Ardy Wirasaputra</a>
+                                <a href="https://github.com/Ardywsptr" class="hoverfooter text-reset">Ardy Wirasaputra</a>
                             </p>
                             <p>
-                                <a href="https://github.com/wiraaji" class="text-reset">Wira Aji Nugraha</a>
+                                <a href="https://github.com/wiraaji" class="hoverfooter text-reset">Wira Aji Nugraha</a>
                             </p>
                             <p>
-                                <a href="https://github.com/isamsd26" class="text-reset">Isa Mas'ud</a>
+                                <a href="https://github.com/isamsd26" class="hoverfooter text-reset">Isa Mas'ud</a>
                             </p>
                         </div>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <div class=" col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
                             <p>
-                                <a href="/" class="text-reset">Home</a>
+                                <a href="/" class="hoverfooter text-reset">Home</a>
                             </p>
                             <p>
-                                <a href="#tips" class="text-reset">Tips & Trik</a>
+                                <a href="#tips" class="hoverfooter text-reset">Tips & Trik</a>
                             </p>
                             <p>
-                                <a href="#news" class="text-reset">Berita</a>
+                                <a href="#news" class="hoverfooter text-reset">Berita</a>
                             </p>
                             <p>
-                                <a href="#/tes" class="text-reset">Test</a>
+                                <a href="#/tes" class="hoverfooter text-reset">Tes</a>
                             </p>
                             <p>
-                                <a href="#/riwayat" class="text-reset">Riwayat</a>
+                                <a href="#/riwayat" class="hoverfooter text-reset">Riwayat</a>
                             </p>
                         </div>
                         <!-- Grid column -->

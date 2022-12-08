@@ -21,7 +21,7 @@ const Tes = {
     async render() {
         return `
 
-            <h4 class="text-center pt-5">Halaman Test</h4>
+            <h4 class="text-center pt-5">Halaman Tes</h4>
             <hr class="border border-secondary opacity-90 w-75 mx-auto">
 
     <!-- instruksi --> 
@@ -30,7 +30,7 @@ const Tes = {
             Warning!
         </div>
         <div class="card-body">
-            <p class="card-text">Seperti test buta warna lain nya, tidak disarankan untuk mengikuti test menggunakan kacamata dengan lensa berwarna apapun. Oleh karena itu, pastikan untuk memperhatikan hal berikut sebelum mengikuti tes :</p>
+            <p class="card-text">Seperti tes buta warna lain nya, tidak disarankan untuk mengikuti tes menggunakan kacamata dengan lensa berwarna apapun. Oleh karena itu, pastikan untuk memperhatikan hal berikut sebelum mengikuti tes :</p>
             <ol class="list-group list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
@@ -53,7 +53,7 @@ const Tes = {
             </ol>
         </div>
         <div class="card-footer text-muted">
-            Test dibawah ini
+            Tes dibawah ini
         </div>
     </div>
     <!--end-->
