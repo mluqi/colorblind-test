@@ -24,6 +24,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--body);
 }
+main{
+    background-image: url("https://i.ibb.co/0D8kDvd/17564643-SL-042620-30310-10.jpg");
+}
 
 /* ------------------------------------------------------------ 
 Setup components
@@ -64,6 +67,9 @@ Setup components
     color: var(--black);
 }
 
+#about{
+    box-shadow: 10px -10px 15px -3px rgba(0,0,0,0.1);
+}
 
 
 /* ------------------------------------------------------------ 
@@ -72,6 +78,7 @@ Navbar
 
 .navbar {
     padding: 32px 0;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 .nav-link {
     margin-left: 41px;
@@ -220,7 +227,7 @@ Test setion
         display: flex;
         color: #303841;
         justify-content: center;
-        margin-bottom: 200px;
+        padding-bottom: 200px;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -335,7 +342,6 @@ Test setion
         background-color: #303841;
     }
     .qs-all{
-        margin-bottom: 200px;
         margin-left: 20px;
         margin-right: 20px;
     }

@@ -6,7 +6,7 @@ import {
 const Riwayat = {
     async render() {
         return `
-        <div class="history-container container mb-5 pt-5" style="min-height: 100vh;">
+        <div class="history-container container pb-5 pt-5" style="min-height: 100vh;">
             <h4 class="text-center">Riwayat Test</h4>
             <hr class="border border-secondary opacity-90">
             <table class="table table-secondary table-striped table-hover mt-5">
