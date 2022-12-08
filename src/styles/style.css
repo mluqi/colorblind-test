@@ -365,8 +365,13 @@ Test setion
 }
 
 .hoverfooter:hover{
-    transition: all 0.5s ease-in-out; 
-    transform: scale(1.1);
+    color: #EA9215;
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out; 
+}
+
+.hoverfooter a{
+    text-decoration: 0;
 }
 
 @keyframes loading{
