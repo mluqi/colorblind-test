@@ -47,6 +47,6 @@ window.onscroll = function () {
 
     spinner.classList.add('spinner-hidden');
     spinner.addEventListener('transitionend', () => {
-        document.body.removeChild(document.body.firstChild);
+        document.body.removeChild('.spinner');
     });
   });
