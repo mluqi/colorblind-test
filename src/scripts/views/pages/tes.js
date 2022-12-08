@@ -21,7 +21,7 @@ const Tes = {
     async render() {
         return `
 
-            <h4 class="text-center mt-5">Halaman Test</h4>
+            <h4 class="text-center pt-5">Halaman Test</h4>
             <hr class="border border-secondary opacity-90 w-75 mx-auto">
 
     <!-- instruksi --> 
