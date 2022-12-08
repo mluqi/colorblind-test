@@ -67,6 +67,9 @@ Setup components
     color: var(--black);
 }
 
+#about{
+    box-shadow: 10px -10px 15px -3px rgba(0,0,0,0.1);
+}
 
 
 /* ------------------------------------------------------------ 
@@ -224,7 +227,7 @@ Test setion
         display: flex;
         color: #303841;
         justify-content: center;
-        margin-bottom: 200px;
+        padding-bottom: 200px;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -339,7 +342,6 @@ Test setion
         background-color: #303841;
     }
     .qs-all{
-        margin-bottom: 200px;
         margin-left: 20px;
         margin-right: 20px;
     }
