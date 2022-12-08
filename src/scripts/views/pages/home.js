@@ -4,6 +4,7 @@ import datas from '../../data/DATA.json';
 const Home = {
     async render() {
         return `
+        
         <!--hero jumbotron-->
         <hero-section></hero-section>
 
