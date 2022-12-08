@@ -27,7 +27,7 @@ const Tes = {
     <!-- instruksi --> 
     <div class="card text-center w-75 mx-auto mb-5 mt-5">
         <div class="card-header fw-bold">
-            Warning!
+            <h5>Warning!<h5>
         </div>
         <div class="card-body">
             <p class="card-text">Seperti test buta warna lain nya, tidak disarankan untuk mengikuti test menggunakan kacamata dengan lensa berwarna apapun. Oleh karena itu, pastikan untuk memperhatikan hal berikut sebelum mengikuti tes :</p>
