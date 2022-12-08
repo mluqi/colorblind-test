@@ -8,8 +8,8 @@ class NavBar extends HTMLElement {
   render() {
     this.innerHTML = `
     <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">
+      <div class="container mt-3">
+        <a class="navbar-brand" href="/">
             <img src="${logo}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent, #navbarNavDarkDropdown" aria-controls="navbarSupportedContent navbarNavDarkDropdow" aria-expanded="false" aria-label="Toggle navigation">
