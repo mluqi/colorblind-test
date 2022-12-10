@@ -70,19 +70,24 @@ https://docs.google.com/presentation/d/1aXOOX3Q3tx-fXm6eDySpafEczbBKAdlIh-2JfGHU
 
 https://youtu.be/bq2NVcI_4ew
 
-
 <a id="9"></a>
+## Project brief Link :
+
+https://docs.google.com/document/d/1CitNTbTY8R3W8X23-Vrh6_5f2stJdwfK18FiuOjB8Dw/edit
+
+
+<a id="10"></a>
 # About ColorBlindTest
 
 **Color Blind Test** aSebuah platform berbasis website penyedia tes buta warna secara online dengan tampilan sederhana dan mudah dipahami. Aplikasi ini dapat melakukan tes buta warna secara daring dan praktis, di mana saja dan kapan saja.
 
-<a id="10"></a>
+<a id="11"></a>
 # Backgrounder
 <p>Tes buta warna adalah tes yang digunakan untuk mengetahui apakah seseorang mengalami buta warna atau tidak. Ada 3 jenis hasil tes buta warna yaitu buta warna lengkap, buta warna sebagian dan normal. Nilai ujian bagi penyandang buta warna sangat penting, terutama untuk pendidikan lanjutan dan bekerja di bidang tertentu seperti teknik elektro, teknik komputer, desain, dan lain-lain. Salah satu metode pengujian buta warna adalah metode Ishihara. Metode ini dilakukan dalam cara untuk menampilkan gambar yang berisi banyak warna. Angka terbentuk di antara warna. Proses pengujian penyandang buta warna dengan metode Ishihara biasanya dilakukan secara manual, yaitu dengan meminta petugas pengujian buta warna menunjukkan lembaran gambar dan peserta ujian diminta menyebutkan angka yang terlihat pada gambar. Dari berbagai gambar yang ditampilkan dan tanggapan peserta tes buta warna, petugas menyimpulkan apakah peserta tes buta warna seluruhnya, sebagian, atau normal. Proses ini dilakukan untuk 1 orang peserta ujian dan petugas mencatat hasilnya pada Lembar atau Formulir Hasil Tes Buta Warna. Proses tes buta warna dilakukan secara manual dan diperoleh hasil hanya direkam dalam lembar formulir tertentu.</p>
 
 <p>Pada bidang kesehatan mata teknologi berkembang sangat pesat, tetapi masih banyak orang  datang langsung ke dokter mata untuk cek kesehatan mata mereka terutama tes Buta Warna.  Maka dari itu kami menawarkan solusi dengan membuat website tes buta warna yang dapat diakses melalui device dan menghasilkan hasil yang akurat.</p>
 
-<a id="11"></a>
+<a id="12"></a>
 # Project Resource
 
 Berikut Resources yang dibutuhkan dalam pengembangan Website ColorBlindTest :
@@ -120,7 +125,7 @@ Berikut Resources yang dibutuhkan dalam pengembangan Website ColorBlindTest :
 </ul>
 
 
-<a id="12"></a>
+<a id="13"></a>
 #  Risk and Issue Management Plan: 
 
 Berikut merupakan beberapa faktor yang dapat menggagalkan atau menunda pembuatan proyek website yang akan dibangun dan perencanaan bagaimana mengidentifikasi serta menyelesaikan isu yang mungkin terjadi selama pengerjaan proyek. 
@@ -137,7 +142,7 @@ Berikut merupakan beberapa faktor yang dapat menggagalkan atau menunda pembuatan
   Untuk ancaman pada proyek kita ini, dikarenakan masih tahapan awal mungkin kita kurangnya fitur dan mungkin para pengguna mendapatkan kurangnya kenyamanan pada proyek ini. 
 
 
-<a id="13"></a>
+<a id="14"></a>
 # Daftar Pustaka
 <ul>
   <li><p>Fenny Nur Efrianty , Harsiti, M. Thoha Nurhadiyan, “Implementasi Metode Ishihara pada Tes Buta Warna (Colour Deficiency) di Klinik Amanda-Anyer” , September 2018, https://e-jurnal.lppmunsera.org/index.php/jsii/article/download/778/697</p></li>
