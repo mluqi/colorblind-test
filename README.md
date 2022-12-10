@@ -1,7 +1,7 @@
 # Color Blind Test
 <br />
 <p align="center">
-  <img src="./src/public/logo.svg" alt="Logo" width="80" height="80">
+  <img src="./src/public/logo.svg" alt="Logo" width="200" height="200">
   <h3 align="center">Color Blind Test</h3>
 </p>
 
@@ -72,7 +72,7 @@ https://youtu.be/bq2NVcI_4ew
 
 
 <a id="9"></a>
-# About FoodIntake
+# About ColorBlindTest
 
 **Color Blind Test** aSebuah platform berbasis website penyedia tes buta warna secara online dengan tampilan sederhana dan mudah dipahami. Aplikasi ini dapat melakukan tes buta warna secara daring dan praktis, di mana saja dan kapan saja.
 
@@ -85,13 +85,17 @@ https://youtu.be/bq2NVcI_4ew
 <a id="11"></a>
 # Project Resource
 
-Berikut Resources yang dibutuhkan dalam pengembangan Website FoodIntake :
+Berikut Resources yang dibutuhkan dalam pengembangan Website ColorBlindTest :
 <ul>
   <li>Bahasa Pemograman :</li>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
       <li>Javascript</li>
+    </ul>
+    <li>Framework :</li>
+    <ul>
+      <li>Bootstrap</li>
     </ul>
   <li>API :</li>
     <ul>
@@ -111,6 +115,7 @@ Berikut Resources yang dibutuhkan dalam pengembangan Website FoodIntake :
       <li>Google Meet</li>
       <li>WhatssApp</li>
       <li>GitHub</li>
+      <li>Discord</li>
     </ul>
 </ul>
 
