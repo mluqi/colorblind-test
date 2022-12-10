@@ -1,7 +1,7 @@
 # Color Blind Test
 <br />
 <p align="center">
-  <img src="./src/public/logo.svg" alt="Logo" width="300" height="300">
+  <img src="./src/public/logo.svg" alt="Logo" width="300" height="300" style="margin:0;">
   <h3 align="center">Color Blind Test</h3>
 </p>
 
