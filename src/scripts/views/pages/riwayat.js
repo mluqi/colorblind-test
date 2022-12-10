@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import {
     arrayTest,
 } from './tes';
@@ -19,8 +18,6 @@ const Riwayat = {
                     </tr>
                 </thead>
                 <tbody class="align-middle text-center">
-
-                <!--output data tes disini-->
                     ${arrayTest.map((test, index) => `
                     <tr>
                         <th scope="row">${index + 1}</th>
@@ -29,8 +26,6 @@ const Riwayat = {
                         <td><button type="button" class="btn btn-danger" id="btn-delete" value="${index}"><i class="bi bi-trash3"></i></button></td>
                     </tr>
                     `).join('')}
-                <!-- end output data tes disini-->
-
                 </tbody>
             </table>
         </div>
@@ -38,11 +33,9 @@ const Riwayat = {
     },
 
     async afterRender() {
-        // Fungsi ini akan dipanggil setelah render()
         const btnDelete = document.getElementsByClassName('btn-danger');
         for (let i = 0; i < btnDelete.length; i++) {
             btnDelete[i].addEventListener('click', () => {
-                // eslint-disable-next-line no-undef
                 swal({
                         title: 'Hapus item ini?',
                         icon: 'warning',
@@ -53,7 +46,6 @@ const Riwayat = {
                         if (willDelete) {
                             arrayTest.splice(btnDelete[i].value, 1);
                             localStorage.setItem('COLOR-BLIND-TEST', JSON.stringify(arrayTest));
-                            // eslint-disable-next-line no-undef
                             swal({
                                 title: 'Sukses!',
                                 text: 'Riwayat berhasil dihapus',

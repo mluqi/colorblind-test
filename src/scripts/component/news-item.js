@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-// import DataSource from '../data/data-source.js';
-// eslint-disable-next-line no-unused-vars
 import * as $ from 'jquery';
 
 const showFormattedDate = (date) => {

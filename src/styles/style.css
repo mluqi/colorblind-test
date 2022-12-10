@@ -243,6 +243,7 @@ Test setion
         color: #303841;
         justify-content: center;
         padding-bottom: 200px;
+        padding-top: 50px;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -260,11 +261,14 @@ Test setion
     .inner-div{
         background-color: #3A4750;
         border-radius: 1rem;
+        padding-top: 60px;
+        padding-bottom: 20px;
     }
     .inner-div h2{
         text-align:center;
         font-size: 3.5rem;
         font-weight: 400;
+        padding-bottom: 30px;
     }
 
     .inner-div li{
