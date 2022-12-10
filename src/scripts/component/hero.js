@@ -19,7 +19,7 @@ class HeroSection extends HTMLElement {
                         </div>
                     </div>
                     <div class="col-md-6">
-                    <img class="heroImg" src="${heroImg}" alt="">
+                        <img class="heroImg" src="${heroImg}" alt="">
                     </div>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import './news-item.js';
 
 class newsList extends HTMLElement {
@@ -14,13 +13,13 @@ class newsList extends HTMLElement {
                     <h3>Berita</h3>
                     <p>Berita Kesehatan Internasional</p>
                 </div class="container text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col mt-5">            
-                        <div class="row news-container"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col mt-5">            
+                            <div class="row news-container"></div>
+                        </div>
                     </div>
-                </div>
-            </div>      
+                </div>      
             </div>
         </section>
         `;

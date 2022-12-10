@@ -1,12 +1,11 @@
-/* eslint-disable no-underscore-dangle */
 class tipsItem extends HTMLElement {
-    set data(data) {
-        this._data = data;
-        this.render();
-    }
+  set data(data) {
+    this._data = data;
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -18,7 +17,7 @@ class tipsItem extends HTMLElement {
           </div>
         </div>
       `;
-    }
+  }
 }
 
 customElements.define('tips-item', tipsItem);

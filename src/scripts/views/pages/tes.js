@@ -1,8 +1,3 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-return-assign */
-/* eslint-disable no-plusplus */
-
 export const arrayTest = [];
 const setTestObject = (id, result) => ({
     id,
@@ -20,80 +15,78 @@ if (localStorage.getItem('COLOR-BLIND-TEST') !== null) {
 const Tes = {
     async render() {
         return `
+        <h4 class="text-center pt-5">Halaman Tes</h4>
+        <hr class="border border-secondary opacity-90 w-75 mx-auto">
 
-            <h4 class="text-center pt-5">Halaman Tes</h4>
-            <hr class="border border-secondary opacity-90 w-75 mx-auto">
+        <!-- instruksi --> 
+        <div class="card text-center w-75 mx-auto mb-5 mt-5">
+            <div class="card-header fw-bold">
+                Warning!
+            </div>
+            <div class="card-body">
+                <p class="card-text">Seperti tes buta warna lain nya, tidak disarankan untuk mengikuti tes menggunakan kacamata dengan lensa berwarna apapun. Oleh karena itu, pastikan untuk memperhatikan hal berikut sebelum mengikuti tes :</p>
+                <ol class="list-group list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                        <div class="fw-bold">Tidak menggunakan kaca mata dengan lensa berwarna</div>
+                            Tes ini disarankan untuk dilakukan dengan mata telanjang atau apabila menggunakan kacamata maka pakailah kaca mata dengan lensa tanpa warna (bening). Hal tersebut dilakukan dengan tujuan untuk menghasilkan hasil yang lebih akurat dan tidak terjadi kesalah pahaman dalam mengikuti tes.
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                        <div class="fw-bold">Ubah tingkat kecerahan di layar anda menjadi tinggi</div>
+                            Kecerahan pada layar mempengaruhi warna dan kemampuan untuk melihat diferensiasi, sehingga disarankan untuk meningkatkan tingkat kecerahan pada layar monitor atau ponsel anda.
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                        <div class="fw-bold">Jarak pandang layar maksimal 1 meter</div>
+                            Untuk hasil yang akurat posisikan layar dengan mata pada jarak maksimal 1 meter dari tempat duduk dengan layar monitor/ponsel dan kondisikan ruangan dengan cahaya yang cukup.
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="card-footer text-muted">
+                Tes dibawah ini
+            </div>
+        </div>
 
-    <!-- instruksi --> 
-    <div class="card text-center w-75 mx-auto mb-5 mt-5">
-        <div class="card-header fw-bold">
-            Warning!
+        <!--tes-->
+        <div class="containerLoad">
+        <div id="loading"></div>
+            <div class="qs-all">
+                <div class="main-div">
+                    <div class="inner-div">
+                        <h2 class="question"></h2>
+                        <ul class="container-options">
+                            <li>
+                                <input type="radio" name="answer" id="ans1" class="answer">
+                                <label for="ans1" id="option1" class="options">answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="ans2" class="answer">
+                                <label for="ans2" id="option2" class="options">answer</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="ans3" class="answer">
+                                <label for="ans3" id="option3" class="options">answer</label>
+                            </li>
+                            <li>
+                            <input type="radio" name="answer" id="ans4" class="answer">
+                                <label for="ans4" id="option4" class="options">answer</label>
+                            </li>
+                        </ul>
+                        <button id="submit" class="text-center mx-auto submitArea mb-5 mt-5 ps-5 pe-5">Submit</button>
+                        <div id="showScore" class="scoreArea"></div>
+                    </div class="inner-div">
+                </div> 
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">Seperti tes buta warna lain nya, tidak disarankan untuk mengikuti tes menggunakan kacamata dengan lensa berwarna apapun. Oleh karena itu, pastikan untuk memperhatikan hal berikut sebelum mengikuti tes :</p>
-            <ol class="list-group list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                    <div class="fw-bold">Tidak menggunakan kaca mata dengan lensa berwarna</div>
-                        Tes ini disarankan untuk dilakukan dengan mata telanjang atau apabila menggunakan kacamata maka pakailah kaca mata dengan lensa tanpa warna (bening). Hal tersebut dilakukan dengan tujuan untuk menghasilkan hasil yang lebih akurat dan tidak terjadi kesalah pahaman dalam mengikuti tes.
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                    <div class="fw-bold">Ubah tingkat kecerahan di layar anda menjadi tinggi</div>
-                        Kecerahan pada layar mempengaruhi warna dan kemampuan untuk melihat diferensiasi, sehingga disarankan untuk meningkatkan tingkat kecerahan pada layar monitor atau ponsel anda.
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                    <div class="fw-bold">Jarak pandang layar maksimal 1 meter</div>
-                        Untuk hasil yang akurat posisikan layar dengan mata pada jarak maksimal 1 meter dari tempat duduk dengan layar monitor/ponsel dan kondisikan ruangan dengan cahaya yang cukup.
-                    </div>
-                </li>
-            </ol>
-        </div>
-        <div class="card-footer text-muted">
-            Tes dibawah ini
-        </div>
-    </div>
-    <!--end-->
-
-    <div class="containerLoad">
-    <div id="loading"></div>
-    <div class="qs-all">
-        <div class="main-div">
-            <div class="inner-div">
-                <h2 class="question"></h2>
-                <ul class="container-options">
-                    <li>
-                        <input type="radio" name="answer" id="ans1" class="answer">
-                        <label for="ans1" id="option1" class="options">answer</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="ans2" class="answer">
-                        <label for="ans2" id="option2" class="options">answer</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="ans3" class="answer">
-                        <label for="ans3" id="option3" class="options">answer</label>
-                    </li>
-                    <li>
-                    <input type="radio" name="answer" id="ans4" class="answer">
-                        <label for="ans4" id="option4" class="options">answer</label>
-                    </li>
-                </ul>
-                <button id="submit" class="text-center mx-auto submitArea mb-5 mt-5 ps-5 pe-5">Submit</button>
-                <div id="showScore" class="scoreArea"></div>
-            </div class="inner-div">
-        </div> 
-    </div>
-    </div>
 
     `;
     },
 
     async afterRender() {
-        // Fungsi ini akan dipanggil setelah render()
         const quizDB = [{
                 question: '<img class="srcImg" src="https://i.ibb.co/MV2bTzr/2.png" alt="Ishihara-01" border="0">',
                 a: '25',
@@ -341,7 +334,6 @@ const Tes = {
 
         submit.addEventListener('click', () => {
             const checkedAnswer = getCheckAnswer();
-            console.log(checkedAnswer);
 
             if (checkedAnswer == quizDB[questionCount].ans) {
                 score++;
@@ -360,7 +352,6 @@ const Tes = {
                 </div>
                 `;
 
-                // menyimpan data hasil test ke local storage
                 const id = new Date();
                 const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
                 const datetime = `${days[id.getDay()]},${id.getDate()}-${id.getMonth() + 1}-${id.getFullYear()}`;
@@ -368,7 +359,6 @@ const Tes = {
                 arrayTest.push(testObject);
 
                 localStorage.setItem('COLOR-BLIND-TEST', JSON.stringify(arrayTest));
-                // end
 
                 showScore.classList.remove('scoreArea');
             }

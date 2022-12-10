@@ -4,24 +4,20 @@ import datas from '../../data/DATA.json';
 const Home = {
     async render() {
         return `
-        
-        <!--hero jumbotron-->
-        <hero-section></hero-section>
+            <!--hero jumbotron-->
+            <hero-section></hero-section>
 
-        <!--Tips & trik-->
-        <tips-list></tips-list>
-        
-        <!--Berita-->
-        <news-list></news-list>
-
-       
-    `;
+            <!--Tips & trik-->
+            <tips-list></tips-list>
+            
+            <!--Berita-->
+            <news-list></news-list>
+        `;
     },
 
     async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
-    const tipsListElement = document.querySelector('tips-list');
-    tipsListElement.datas = datas;
+        const tipsListElement = document.querySelector('tips-list');
+        tipsListElement.datas = datas;
     },
 };
 

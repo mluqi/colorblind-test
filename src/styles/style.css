@@ -243,6 +243,7 @@ Test setion
         color: #303841;
         justify-content: center;
         padding-bottom: 200px;
+        padding-top: 50px;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -260,11 +261,14 @@ Test setion
     .inner-div{
         background-color: #3A4750;
         border-radius: 1rem;
+        padding-top: 60px;
+        padding-bottom: 20px;
     }
     .inner-div h2{
         text-align:center;
         font-size: 3.5rem;
         font-weight: 400;
+        padding-bottom: 30px;
     }
 
     .inner-div li{
@@ -380,106 +384,6 @@ Test setion
     }
     to{
         transform: rotate(1turn);
-    }
-}
-
-/* --------Responsive section test-------------*/
-@media screen and (min-width: 300px) {
-    .srcImg{
-        width: 320px;
-        margin-left: 10px;
-    }
-    .inner-div{
-        width: auto;
-        border-radius: 1rem;
-        box-shadow: 0 1rem -0.7rem rgba(0, 0, 0, 0.4);
-    }
-    #submit , .btn{
-        padding: 10px;
-        outline: none;
-        font-size: 1rem;
-        display: block;
-        margin: 10px;
-        border: none;
-        text-transform: uppercase;
-        color: #fefefe;
-        background-color: #303841;
-    }
-    .qs-all{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-
-/* --------Responsive section general-------------*/
-@media (max-width: 576px) {
-
-    section.hero,
-    section.setup,
-    section.information {
-        text-align: center;
-    }
-    /* ------------------------------------------------------------ 
-    Navbar
-    ---------------------------------------------------------------*/
-    .navbar {
-        padding: 20px 0;
-    }
-    .nav-link {
-        margin-left: 0;
-    }
-    /* ------------------------------------------------------------ 
-    Hero setion
-    ---------------------------------------------------------------*/
-    section.hero img {
-        padding-top: 2.5rem;
-    }
-
-    section.hero .text {
-        font-weight: 800;
-        font-size: 38px;
-        line-height: 53px;
-    }
-
-    .buttons .btn {
-        display: block;
-        margin: 1rem 0;
-    }
-
-    .buttons .ms-3 {
-        margin-left: 0 !important;
-    }
-
-    /* ------------------------------------------------------------ 
-    Setup setion
-    ---------------------------------------------------------------*/
-    section.setup {
-        padding: 50px 0;
-    }
-
-    /* ------------------------------------------------------------ 
-    Footer setion
-    ---------------------------------------------------------------*/
-    section footer {
-        padding-top: 50px;
-        margin-bottom: 44px;
-        font-size: 15px;
-    }
-}
-
-/* --------Responsive section test-------------*/
-@media screen and (max-width: 759px) {
-    .inner-div{
-        width: auto;
-        border-radius: 1rem;
-        box-shadow: 0 1rem -0.7rem rgba(0, 0, 0, 0.4);
-    }
-}
-
-/* --------Responsive section general-------------*/
-@media screen and (max-width: 991px) {
-    section footer {
-        font-size: 14px;
     }
 }
 
