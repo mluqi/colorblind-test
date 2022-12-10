@@ -1,5 +1,6 @@
 import 'regenerator-runtime';
 import '../styles/style.css';
+import '../styles/responsive.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as bootstrap from 'bootstrap';
 import swal from 'sweetalert';
